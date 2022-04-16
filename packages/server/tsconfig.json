@@ -4,11 +4,8 @@
     "module": "commonjs",
     "rootDir": "src",
     "outDir": "build",
-    "isolatedModules": false,
+    "isolatedModules": false
   },
-  "references": [
-    { "path": "../common" }
-  ],
   "include": [
     "src"
   ]

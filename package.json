@@ -14,7 +14,7 @@
     "client": "yarn workspace @my-app/client",
     "common": "yarn workspace @my-app/common",
     "server": "yarn workspace @my-app/server",
-    "dev": "yarn common dev & yarn client dev --verbose & yarn server dev",
+    "dev": "yarn client dev --verbose && yarn server dev",
     "start": "yarn server start"
   },
   "dependencies": {}

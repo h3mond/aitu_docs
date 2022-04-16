@@ -3,8 +3,6 @@ import { Grid, TextField, Fab } from '@material-ui/core';
 
 import { CloudDownloadRounded } from '@material-ui/icons';
 
-import { App_Name } from '@my-app/common';
-
 import './App.css';
 
 export default function App() {
@@ -27,7 +25,7 @@ export default function App() {
     <div className="App">
       <Grid container spacing={6} justifyContent="center" direction="column">
         <Grid item> 
-          {`App Name - ${ App_Name } `}
+          {`App Name - $`}
         </Grid>
         <Grid item> 
           <Fab variant="extended" color="primary" onClick={onCallApi}>

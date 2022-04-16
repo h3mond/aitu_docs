@@ -6,8 +6,8 @@ WORKDIR /app
 COPY ["package.json", "tsconfig.base.json", "yarn.lock", "./"]
 
 # Copy package.json & tsconfig.json of each workspace
-ARG PACKAGE="common"
-COPY ["packages/${PACKAGE}/*.json", "./packages/${PACKAGE}/"]
+# ARG PACKAGE="common"
+# COPY ["packages/${PACKAGE}/*.json", "./packages/${PACKAGE}/"]
 ARG PACKAGE="client"
 COPY ["packages/${PACKAGE}/*.json", "./packages/${PACKAGE}/"]
 ARG PACKAGE="server"
@@ -20,7 +20,7 @@ RUN yarn install
 COPY . .
 
 # Build all workspaces
-RUN ["yarn", "common", "build"]
+# RUN ["yarn", "common", "build"]
 RUN ["yarn", "client", "build"]
 RUN ["yarn", "server", "build"]
 
